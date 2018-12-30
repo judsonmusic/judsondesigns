@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+html, body{
+    padding: 0 !important;
+    margin: 0 !important;
+    padding-bottom: 248px;
+    height: 100%;
+}
+[no-padding]{
+    padding: 0 !important;
+}
+[no-margin]{
+    margin: 0 !important;
+}
+[text-left]{
+    text-align: left !important;
+}
+[text-center]{
+    text-align: center !important;
+}
+[text-right]{
+    text-align: right !important;
+}
+p, section{
+    padding: 20px;
+}
+p{
+    color: #333333;
+}
