@@ -1,6 +1,6 @@
 {
   "name": "judson-designs",
-  "version": "0.0.0",
+  "version": "1.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -12,7 +12,7 @@
     "serve:ssr": "node dist/server",
     "build:client-and-server-bundles": "ng build --prod && ng run judson-designs:server",
     "webpack:server": "webpack --config webpack.server.config.js --progress --colors",
-    "comments-command": "ng build --prod && ng run judson-designs:server"
+    "comments-command": "ng build --prod && ng run judson-designs:server OR YOU CAN DO npm run build:ssr && npm run serve:ssr"
   },
   "private": true,
   "dependencies": {
@@ -31,6 +31,7 @@
     "bootstrap": "^4.2.1",
     "core-js": "^2.5.4",
     "install": "^0.12.2",
+    "jquery": "^3.3.1",
     "ngx-bootstrap": "^3.1.4",
     "npm": "^6.5.0",
     "rxjs": "~6.3.3",
@@ -43,10 +44,12 @@
     "@angular/cli": "~7.1.4",
     "@angular/compiler-cli": "~7.1.0",
     "@angular/language-service": "~7.1.0",
-    "@types/node": "~8.9.4",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "~8.9.4",
     "codelyzer": "~4.5.0",
+    "gulp": "^4.0.0",
+    "gulp-string-replace": "^1.1.2",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~3.1.1",
@@ -57,6 +60,7 @@
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
-    "typescript": "~3.1.6"
+    "typescript": "~3.1.6",
+    "webpack-cli": "^3.1.2"
   }
 }

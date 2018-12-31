@@ -14,6 +14,10 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PowerFooterComponent } from './components/power-footer/power-footer.component';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { CacheInterceptor } from './cache-interceptor';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { JumbotronComponent } from './components/jumbotron/jumbotron.component';
 
 @NgModule({
   declarations: [
@@ -28,13 +32,17 @@ import { PowerFooterComponent } from './components/power-footer/power-footer.com
     NotFoundComponent,
     HeaderComponent,
     FooterComponent,
-    PowerFooterComponent
+    PowerFooterComponent,
+    NavbarComponent,
+    JumbotronComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'judson-designs' }),
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: CacheInterceptor, multi: true }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

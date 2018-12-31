@@ -1,33 +1,8 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <app-header></app-header>
-<div class="container-fluid text-center" no-margin no-padding>
-
-  <ul class="nav nav-fill">
-    <li class="nav-item">
-      <a class="nav-link" routerLink="/home" [routerLinkActive]="['active']">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" routerLink="/about" [routerLinkActive]="['active']">About</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" routerLink="/contact" [routerLinkActive]="['active']">Contact</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" routerLink="/portfolio" [routerLinkActive]="['active']">Portfolio</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" routerLink="/resources" [routerLinkActive]="['active']">Resources</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" routerLink="/resume" [routerLinkActive]="['active']">Resume</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" routerLink="/blog" [routerLinkActive]="['active']">Blog</a>
-    </li>
-  </ul>
-</div>
-<div class="container">
-  <router-outlet></router-outlet>
+<!-- <app-jumbotron></app-jumbotron> -->
+<div class="container-fluid container-main" no-padding no-margin>
+    <router-outlet></router-outlet>
 </div>
 <app-power-footer></app-power-footer>
 <app-footer></app-footer>

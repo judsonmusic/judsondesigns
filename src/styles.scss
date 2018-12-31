@@ -1,28 +1,187 @@
 /* You can add global styles to this file, and also import other style files */
-html, body{
-    padding: 0 !important;
-    margin: 0 !important;
-    padding-bottom: 248px;
-    height: 100%;
+html,
+body {
+  padding: 0 !important;
+  margin: 0 !important;
+  margin-bottom: 8px !important;
+  background-color: #222222 !important;
 }
-[no-padding]{
-    padding: 0 !important;
+
+[no-padding] {
+  padding: 0 !important;
 }
-[no-margin]{
-    margin: 0 !important;
+
+[no-margin] {
+  margin: 0 !important;
 }
-[text-left]{
-    text-align: left !important;
+
+[text-left] {
+  text-align: left !important;
 }
-[text-center]{
-    text-align: center !important;
+
+[text-center] {
+  text-align: center !important;
 }
-[text-right]{
-    text-align: right !important;
+
+[text-right] {
+  text-align: right !important;
 }
-p, section{
-    padding: 20px;
+
+p {
+  padding: 20px;
+  color: #333333;
 }
-p{
-    color: #333333;
+
+h1 {
+  padding-top: 10px;
+}
+
+section {
+  min-height: 400px;
+  background: #222222;
+
+  .container {
+    color: white;
+    text-shadow: 1px 1px 2px #000;
+    padding: 40px;
+
+    h1 {
+      font-size: 24px;
+    }
+
+    p {
+      color: white;
+    }
+  }
+}
+
+/**gradients**/
+.trust-blue-gradient {
+  background: -webkit-linear-gradient(0, #38aecc 0%, #336699 100%);
+  background: -moz-linear-gradient(0, #38aecc 0%, #336699 100%);
+  background: linear-gradient(0, #38aecc 0%, #336699 100%);
+}
+
+.new-leaf-gradient {
+  background: -webkit-linear-gradient(0, #3AA17E 0%, #00537E 100%);
+  background: -moz-linear-gradient(0, #3AA17E 0%, #00537E 100%);
+  background: linear-gradient(0, #3AA17E 0%, #00537E 100%);
+}
+
+.blood-orange-gradient {
+  background: -webkit-linear-gradient(0, #da7352 0%, #d64759 100%);
+  background: -moz-linear-gradient(0, #da7352 0%, #d64759 100%);
+  background: linear-gradient(0, #da7352 0%, #d64759 100%);
+}
+
+.sour-tropical-gradient {
+  background: -webkit-linear-gradient(0deg, #FD6F46 0%, #FB9832 100%);
+  background: -moz-linear-gradient(0deg, #FD6F46 0%, #FB9832 100%);
+  background: linear-gradient(0deg, #FD6F46 0%, #FB9832 100%);
+}
+
+.epic-bluegreen-gradient {
+  background: -webkit-linear-gradient(0, #01a99c 0%, #0698b1 100%);
+  background: -moz-linear-gradient(0, #01a99c 0%, #0698b1 100%);
+  background: linear-gradient(0, #01a99c 0%, #0698b1 100%);
+}
+
+.white-gray-gradient {
+  background: -webkit-linear-gradient(0, #999999 0%, #5a5c5c 100%);
+  background: -moz-linear-gradient(0, #999999 0%, #5a5c5c 100%);
+  background: linear-gradient(0, #999999 0%, #5a5c5c 100%);
+}
+
+.purple-gradient {
+  background: -webkit-linear-gradient(0, #ef77f3 0%, #7e1f79 100%);
+  background: -moz-linear-gradient(0, #ef77f3 0%, #7e1f79 100%);
+  background: linear-gradient(0, #ef77f3 0%, #7e1f79 100%);
+}
+
+.red-gradient {
+  background: -webkit-linear-gradient(0, #e24141 0%, #8d1a1a 100%);
+  background: -moz-linear-gradient(0, #e24141 0%, #8d1a1a 100%);
+  background: linear-gradient(0, #e24141 0%, #8d1a1a 100%);
+}
+
+/**backgrounds**/
+.bg-slate{
+  background-image: url('/assets/images/backgrounds/slate-4.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.bg-envy{
+  background-image: url('/assets/images/backgrounds/bg-envy.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.bg-aura{
+  background-image: url('/assets/images/backgrounds/bg-aura.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.bg-air{
+  background-image: url('/assets/images/backgrounds/bg-air.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.bg-blue-lines{
+  background-image: url('/assets/images/backgrounds/bg-blue-lines.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.bg-parch-paper{
+  background-image: url('/assets/images/backgrounds/bg-parch-paper.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.bg-mesh{
+  background-image: url('/assets/images/backgrounds/bg-mesh.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.bg-fire{
+  background-image: url('/assets/images/backgrounds/bg-fire.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.bg-sky{
+  background-image: url('/assets/images/backgrounds/bg-sky.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.bg-blur{
+  background-image: url('/assets/images/backgrounds/bg-blur.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.bg-fire-bubbles{
+  background-image: url('/assets/images/backgrounds/bg-firebubbles.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.bg-radio{
+  background-image: url('/assets/images/backgrounds/bg-radio.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.bg-slate-1{
+  background-image: url('/assets/images/backgrounds/bg-slate-1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }

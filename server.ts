@@ -34,13 +34,33 @@ app.engine('html', ngExpressEngine({
 app.set('view engine', 'html');
 app.set('views', join(DIST_FOLDER, 'browser'));
 
+app.use((req, res, next) => {
+  res.header('Cache-Control', 'private, no-cache, no-store, must-revalidate, max-age=0');
+  res.header('Expires', '-1');
+  res.header('Pragma', 'no-cache');
+  res.header('max-age', '0');
+  res.header('etag', 'false');
+  next();
+});
+
+app.get('*', (req, res, next) => {
+  res.header('Cache-Control', 'private, no-cache, no-store, must-revalidate, max-age=0');
+  res.header('Expires', '-1');
+  res.header('max-age', '0');
+  res.header('etag', 'false');
+  res.header('Pragma', 'no-cache');
+  next();
+});
+
 // TODO: implement data requests securely
 app.get('/api/*', (req, res) => {
   res.status(404).send('data requests are not supported');
 });
 
 // Server static files from /browser
-app.get('*.*', express.static(join(DIST_FOLDER, 'browser')));
+app.get('*.*', express.static(join(DIST_FOLDER, 'browser'), {
+  etag: false, maxage: 0
+}));
 
 // All regular routes use the Universal engine
 app.get('*', (req, res) => {
