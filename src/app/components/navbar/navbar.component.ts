@@ -1,5 +1,5 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
-declare var $: any;
+declare var jQuery: any;
 
 @Component({
   selector: 'app-navbar',
@@ -13,8 +13,8 @@ export class NavbarComponent implements OnInit, AfterViewInit {
   ngOnInit() {
   }
   ngAfterViewInit(){
-    $('.navbar-nav>li>a').on('click', function(){
-      $('.navbar-collapse').collapse('hide');
+    jQuery('.navbar-nav>li>a').on('click', function(){
+      jQuery('.navbar-collapse').collapse('hide');
     });    
   }
 

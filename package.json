@@ -10,7 +10,7 @@
     "e2e": "ng e2e",
     "build:ssr": "npm run build:client-and-server-bundles && npm run webpack:server",
     "serve:ssr": "node dist/server",
-    "build:client-and-server-bundles": "ng build --prod && ng run judson-designs:server",
+    "build:client-and-server-bundles": "ng build --prod --output-hashing=all && ng run judson-designs:server",
     "webpack:server": "webpack --config webpack.server.config.js --progress --colors",
     "comments-command": "ng build --prod && ng run judson-designs:server OR YOU CAN DO npm run build:ssr && npm run serve:ssr"
   },
